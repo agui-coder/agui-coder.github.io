@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://agui-coder.github.io/"/>
-  <updated>2020-01-30T11:11:33.133Z</updated>
+  <updated>2020-01-30T11:29:16.349Z</updated>
   <id>https://agui-coder.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>&#39;Java基础总结4&#39;</title>
+    <title>Java基础总结4</title>
     <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%934/"/>
     <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%934/</id>
     <published>2020-01-30T11:10:22.000Z</published>
-    <updated>2020-01-30T11:11:33.133Z</updated>
+    <updated>2020-01-30T11:29:16.349Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a><strong>内部类</strong></h3><ul><li>内部类的作用：内部类可以直接访问外部类的私有属性，内部类被当成外部类的成员。但内部类不能访问内部类属性，</li><li>内部类的使用场合：当只为外部类提供服务的情况下可以考虑使用内部类，每个内部类可以独立基础一个类或者实现接口，所以无论外部类继承或者实现接口对于内部类没有影响。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a><strong>内部类</strong></h3><ul><li>内部类的作用：内部类可以直接访问外部类的私有属性，内部类被当成外部类的成员。但内部类不能访问内部类属性，</li><li>内部类的使用场合：当只为外部类提供服务的情况下可以考虑使用内部类，每个内部类可以独立基础一个类或者实现接口，所以无论外部类继承或者实现接口对于内部类没有影响。</li><li>内部类可以使用public、default、protected 、private以及static修饰。而外部顶级类(我们以前接触的类)只能使用public和default修饰。<br><strong>非静态内部类</strong></li><li>i. 非静态内部类必须寄存在一个外部类对象里。因此，如果有一个非静态内部类对象那么一定存在对应的外部类对象。非静态内部类对象单独属于外部类的某个对象。</li><li>ii. 非静态内部类可以直接访问外部类的成员，但是外部类不能直接访问非静态内部类成员。</li><li>iii. 非静态内部类不能有静态方法、静态属性和静态初始化块。</li><li>iv. 外部类的静态方法、静态代码块不能访问非静态内部类，包括不能使用非静态内部类定义变量、创建实例。<br><strong>成员变量的访问要点</strong></li><li><ol><li>内部类里方法的局部变量：变量名。</li></ol></li><li><ol start="2"><li>内部类属性：this.变量名</li></ol></li><li><ol start="3"><li>外部类属性：外部类名.this.变量名。</li></ol><strong>内部类的访问</strong></li><li>1.外部类定义内部类new Inner()</li><li>2外部类以外的地方使用非静态内部类： Outer.Iennr varname = new Outer().new Inner()<br><strong>静态内部类</strong></li><li>定义：static class ClassName{}</li><li>使用要点：静态内部类的实例方法不能访问外部类的实例方法，静态内部类相当于静态成员可以“静态内部类.名字”的方式访问静态内部类的静态成员，通过new静态内部类()访问内部类的实例。<br> <em>匿名内部类</em>只使用一次的类</li><li>new 父类构造器(实参表)\实现接口(){}</li></ul>]]></content>
     
     <summary type="html">
     
@@ -39,14 +39,16 @@
       <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
     
     
+      <category term="内部类" scheme="https://agui-coder.github.io/tags/%E5%86%85%E9%83%A8%E7%B1%BB/"/>
+    
   </entry>
   
   <entry>
-    <title>&#39;Java基础总结3&#39;</title>
+    <title>Java基础总结3</title>
     <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/"/>
     <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/</id>
     <published>2020-01-30T09:51:02.000Z</published>
-    <updated>2020-01-30T11:12:14.242Z</updated>
+    <updated>2020-01-30T11:29:30.327Z</updated>
     
     <content type="html"><![CDATA[<h3 id="面对对象知识进阶"><a href="#面对对象知识进阶" class="headerlink" title="面对对象知识进阶"></a><strong>面对对象知识进阶</strong></h3><ul><li>Java中只有单继承，接口可以多继承，继承之后子类拥有父类的全部属性和方法(除了构造器与被private修饰的属性和方法)</li><li>子类通过重写父类方法实现多态的必要条件</li><li>重写要方法名与形参列表相同，返回值类型和声明异常类型小于父类，访问权限子类要大于父类</li><li>可以通过重写toString方法改变打印输出或者字符串连接对象时的输出值</li><li>“==”双方式基本类型比值，是引用类型比地址</li><li>equals比较双方的内容，可以根据自己要求重写equals</li><li>super是直接父类对象的引用。可以通过super来访问父类中被子类覆盖的方法或属性。</li><li>有父类当调用属性/或者时从下向上找，构造器由上往下找追溯到Object</li><li>封装是什么？封装就是加属性加方法，优化代码。</li><li>多态是什么？多态就是new的时候左边是父类，右边是子类。运行时多态的前提：继承（实现），重写，向上转型与向下转型。通过对象的向上转型可以实现接受参数的统一，向下转型可以实现子类扩充的调用（一般不操作向下转型，有安全隐患）</li><li>抽象类：有抽象方法的类必须定义抽象类，抽象类只能被继承，抽象类必须被子类实现</li><li>接口就是规范，定义的是一组规则，体现了现实世界中“如果你是…则必须能…”的思想。如果你是天使，则必须能飞。接口的本质是契约，就像我们人间的法律一样。制定好后大家都遵守。</li><li>接口的声明[只能是public或者默认]，接口能多继承，常量总是被public static final修饰。接口中的方法总是被public abstract修饰。</li><li>接口可用于声明引用变量类型，类实现接口的方法只能是public</li></ul>]]></content>
     
@@ -92,11 +94,11 @@
   </entry>
   
   <entry>
-    <title>&#39;Java基础总结1&#39;</title>
+    <title>Java基础总结1</title>
     <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/"/>
     <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</id>
     <published>2020-01-30T06:34:00.000Z</published>
-    <updated>2020-01-30T09:49:58.100Z</updated>
+    <updated>2020-01-30T11:29:30.258Z</updated>
     
     <content type="html"><![CDATA[<h3 id="标识符的使用规范"><a href="#标识符的使用规范" class="headerlink" title="标识符的使用规范"></a><strong>标识符的使用规范</strong></h3><p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p><ul><li><p>标识符必须以字母、下划线_、美元符号$开头。  </p></li><li><p>标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。</p></li><li><p>Java 标识符大小写敏感，且长度无限制。</p></li><li><p>标识符不可以是Java的关键字。</p></li><li><p>表示类名的表示符：每个单词的首字母大写，如Man,GoodMan</p></li><li><p>表示方法和变量的标识符：每个单词小写，从第二个单词开始首字母大写</p></li></ul><h3 id="Java中的关键字、保留字"><a href="#Java中的关键字、保留字" class="headerlink" title="Java中的关键字、保留字"></a><strong>Java中的关键字、保留字</strong></h3><table><thead><tr><th></th><th>关键字</th><th>保留字</th><th></th><th></th><th></th></tr></thead><tbody><tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td><td>case</td></tr><tr><td>catch</td><td>char</td><td>class</td><td>const</td><td>continue</td><td>default</td></tr><tr><td>do</td><td>double</td><td>else</td><td>extends</td><td>final</td><td>finally</td></tr><tr><td>float</td><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><tr><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><td>new</td></tr><tr><td>null</td><td>package</td><td>privvate</td><td>protected</td><td>public</td><td>return</td></tr><tr><td>short</td><td>static</td><td>strictfp</td><td>super</td><td>switch</td><td>synchronized</td></tr><tr><td>this</td><td>throw</td><td>throws</td><td>transient</td><td>try</td><td>void</td></tr><tr><td>voaltile</td><td>while</td><td></td><td></td><td></td><td></td></tr></tbody></table><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a><strong>变量的分类</strong></h3><table><thead><tr><th>类型</th><th>声明位置</th><th>从属于</th><th>生命周期</th><th>使用</th></tr></thead><tbody><tr><td>局部变量</td><td>方法或语句块内部</td><td>方法/语句块</td><td>从声明位置开始，直达方法或语句块执行完毕，局部变量消失</td><td>变量名</td></tr><tr><td>成员变量</td><td>类内部，方法外部</td><td>对象</td><td>对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失</td><td>对象.变量名</td></tr><tr><td>静态变量</td><td>类内部，static修饰</td><td>类</td><td>类被加载，静态变量就有效；类被卸载，静态变量消失</td><td>class.变量名</td></tr></tbody></table><h3 id="变量和常量的命名规范"><a href="#变量和常量的命名规范" class="headerlink" title="变量和常量的命名规范"></a><strong>变量和常量的命名规范</strong></h3><ul><li>所有变量、方法、类名：见名知意</li><li>类成员变量：首字母小写和驼峰原则：monthSalary</li><li>局部变量： 首字母小写和驼峰原则</li><li>常量：大写字母和下划线：MAX_VALUE </li><li>类名：首字母大写和驼峰原则：Man,GoodMan</li><li>方法名：首字母小写和驼峰原则：run(),runRun()</li><li>常量的命名格式：final  type  varName = value;用finald定义,初始化后不能更改</li></ul><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h3><table><thead><tr><th>类型</th><th>所占空间</th><th>表数范围</th></tr></thead><tbody><tr><td>byte</td><td>1字节</td><td>-2^7 ~ 2^7-1 (-128 ~ 127)</td></tr><tr><td>short</td><td>2字节</td><td>-2^15 ~ 2^15-1 (-32768 ~ 32767)</td></tr><tr><td>int</td><td>4字节</td><td>-2^31~2^31-1 (约21亿）</td></tr><tr><td>long</td><td>8字节</td><td>-2^63~2^63-1</td></tr><tr><td>flaot</td><td>4字节</td><td>-3.403E38~3.403E38</td></tr><tr><td>double</td><td>8字节</td><td>-1.798E308~1.798E308</td></tr><tr><td>char</td><td>2字节</td><td></td></tr><tr><td>boolean</td><td>占一位</td><td></td></tr></tbody></table><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h3><table><thead><tr><th>运算符</th><th></th></tr></thead><tbody><tr><td>算术运算符</td><td>+，-，*，/，%，++，–</td></tr><tr><td>赋值运算符</td><td>=</td></tr><tr><td>扩充运算符</td><td>+=，-=，*=，/=</td></tr><tr><td>关系运算符</td><td>&gt;,&lt;,&gt;=,&lt;=,==,!=,instanceof</td></tr><tr><td>逻辑运算符</td><td>&amp;&amp;，丨丨，！，^</td></tr><tr><td>位运算符</td><td>&amp;&amp;，！，^,~,&gt;&gt;,&lt;&lt;,&gt;&gt;&gt;,丨丨</td></tr><tr><td>条件运算符</td><td>？，：</td></tr><tr><td>字符串连接符</td><td>+</td></tr></tbody></table><h3 id="控制语句"><a href="#控制语句" class="headerlink" title="控制语句"></a><strong>控制语句</strong></h3><p>1、if单选择结构：if(boolean){}true执行，false不执行。</p><p>2、if-else双选择结构：if(){true}elese{false}.</p><p>3、if-else多选择结构：if(){}else if(){}else if(){}……</p><p>4、switch(){case 值1：语句1;[break];case 值2：语句2；[break];……[default:默认语句；]}</p><p>5、while循环结构：while(){循环体}。</p><p>6、do{循环体}while().</p><p>7、for循环（初始表达式；布尔表达式；迭代因子）{}；</p><p>8、增强for循环(数据类型 循环赋值输出的变量(相当于for循环的i) : 定义的容器名){}</p><p>9、break强制破坏循环，不在执行循环，continue跳过循环体中尚未执行的语句，接着进行下一次是否执行循环的判定</p>]]></content>
     
