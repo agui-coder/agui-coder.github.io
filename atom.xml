@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://agui-coder.github.io/"/>
-  <updated>2020-01-30T10:06:56.712Z</updated>
+  <updated>2020-01-30T11:11:33.133Z</updated>
   <id>https://agui-coder.github.io/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>&#39;Java基础总结4&#39;</title>
+    <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%934/"/>
+    <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%934/</id>
+    <published>2020-01-30T11:10:22.000Z</published>
+    <updated>2020-01-30T11:11:33.133Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a><strong>内部类</strong></h3><ul><li>内部类的作用：内部类可以直接访问外部类的私有属性，内部类被当成外部类的成员。但内部类不能访问内部类属性，</li><li>内部类的使用场合：当只为外部类提供服务的情况下可以考虑使用内部类，每个内部类可以独立基础一个类或者实现接口，所以无论外部类继承或者实现接口对于内部类没有影响。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;内部类&quot;&gt;&lt;a href=&quot;#内部类&quot; class=&quot;headerlink&quot; title=&quot;内部类&quot;&gt;&lt;/a&gt;&lt;strong&gt;内部类&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;内部类的作用：内部类可以直接访问外部类的私有属性，内部类被当成外部类的成员。但内部类不
+      
+    
+    </summary>
+    
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>&#39;Java基础总结3&#39;</title>
     <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/"/>
     <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/</id>
     <published>2020-01-30T09:51:02.000Z</published>
-    <updated>2020-01-30T10:06:56.712Z</updated>
+    <updated>2020-01-30T11:12:14.242Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="面对对象知识进阶"><a href="#面对对象知识进阶" class="headerlink" title="面对对象知识进阶"></a><strong>面对对象知识进阶</strong></h3><ul><li>Java中只有单继承，接口可以多继承，继承之后子类拥有父类的全部属性和方法(除了构造器与被private修饰的属性和方法)</li><li>子类通过重写父类方法实现多态的必要条件</li><li>重写要方法名与形参列表相同，返回值类型和声明异常类型小于父类，访问权限子类要大于父类</li><li>可以通过重写toString方法改变打印输出或者字符串连接对象时的输出值</li><li>“==”双方式基本类型比值，是引用类型比地址</li><li>equals比较双方的内容，</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="面对对象知识进阶"><a href="#面对对象知识进阶" class="headerlink" title="面对对象知识进阶"></a><strong>面对对象知识进阶</strong></h3><ul><li>Java中只有单继承，接口可以多继承，继承之后子类拥有父类的全部属性和方法(除了构造器与被private修饰的属性和方法)</li><li>子类通过重写父类方法实现多态的必要条件</li><li>重写要方法名与形参列表相同，返回值类型和声明异常类型小于父类，访问权限子类要大于父类</li><li>可以通过重写toString方法改变打印输出或者字符串连接对象时的输出值</li><li>“==”双方式基本类型比值，是引用类型比地址</li><li>equals比较双方的内容，可以根据自己要求重写equals</li><li>super是直接父类对象的引用。可以通过super来访问父类中被子类覆盖的方法或属性。</li><li>有父类当调用属性/或者时从下向上找，构造器由上往下找追溯到Object</li><li>封装是什么？封装就是加属性加方法，优化代码。</li><li>多态是什么？多态就是new的时候左边是父类，右边是子类。运行时多态的前提：继承（实现），重写，向上转型与向下转型。通过对象的向上转型可以实现接受参数的统一，向下转型可以实现子类扩充的调用（一般不操作向下转型，有安全隐患）</li><li>抽象类：有抽象方法的类必须定义抽象类，抽象类只能被继承，抽象类必须被子类实现</li><li>接口就是规范，定义的是一组规则，体现了现实世界中“如果你是…则必须能…”的思想。如果你是天使，则必须能飞。接口的本质是契约，就像我们人间的法律一样。制定好后大家都遵守。</li><li>接口的声明[只能是public或者默认]，接口能多继承，常量总是被public static final修饰。接口中的方法总是被public abstract修饰。</li><li>接口可用于声明引用变量类型，类实现接口的方法只能是public</li></ul>]]></content>
     
     <summary type="html">
     
@@ -35,6 +60,8 @@
     
     </summary>
     
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
     
     
   </entry>
