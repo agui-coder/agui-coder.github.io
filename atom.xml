@@ -5,9 +5,9 @@
   <subtitle>学习博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://yoursite.com/"/>
+  <link href="https://agui-coder.github.io/"/>
   <updated>2020-01-29T21:10:39.088Z</updated>
-  <id>https://yoursite.com/</id>
+  <id>https://agui-coder.github.io/</id>
   
   <author>
     <name>agui-coder</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>My first post</title>
-    <link href="https://yoursite.com/2020/01/30/my-first-post/"/>
-    <id>https://yoursite.com/2020/01/30/my-first-post/</id>
+    <link href="https://agui-coder.github.io/2020/01/30/my-first-post/"/>
+    <id>https://agui-coder.github.io/2020/01/30/my-first-post/</id>
     <published>2020-01-29T21:08:31.000Z</published>
     <updated>2020-01-29T21:10:39.088Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://yoursite.com/2020/01/30/hello-world/"/>
-    <id>https://yoursite.com/2020/01/30/hello-world/</id>
+    <link href="https://agui-coder.github.io/2020/01/30/hello-world/"/>
+    <id>https://agui-coder.github.io/2020/01/30/hello-world/</id>
     <published>2020-01-29T20:33:51.273Z</published>
     <updated>2020-01-29T20:33:51.273Z</updated>
     
