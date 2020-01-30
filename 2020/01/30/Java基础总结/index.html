@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>可几和</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="可几和">
+  <title>&#39;Java基础总结1&#39; | 可几和</title>
+  <meta name="keywords" content=" 标识符 , 关键字 , 变量 ">
+  <meta name="description" content="&#39;Java基础总结1&#39; | 可几和">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="标识符的使用规范标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：  标识符必须以字母、下划线_、美元符号$开头。    标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。  Java 标识符大小写敏感，且长度无限制。  标识符不可以是Java的关键字。  表示类名的表示符：每个单">
 <meta property="og:type" content="article">
@@ -56,7 +56,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avata.jpg" />
@@ -317,12 +317,59 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Java基础总结" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于可几何"><span class="toc-text">关于可几何</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">&#39;Java基础总结1&#39;</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="学习历程">学习历程</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">标识符</a>
+            
+            <a class="color4">关键字</a>
+            
+            <a class="color3">变量</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-01-30 16:30:29'>2020-01-30 14:34</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#标识符的使用规范"><span class="toc-text">标识符的使用规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java中的关键字、保留字"><span class="toc-text">Java中的关键字、保留字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的分类"><span class="toc-text">变量的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量和常量的命名规范"><span class="toc-text">变量和常量的命名规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -335,36 +382,271 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于可几何"><a href="#关于可几何" class="headerlink" title="关于可几何"></a>关于可几何</h2><p><strong>可几何</strong> 是agui-coder的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 生成，部署在 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="标识符的使用规范"><a href="#标识符的使用规范" class="headerlink" title="标识符的使用规范"></a><strong>标识符的使用规范</strong></h3><p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/' target="_blank" rel="noopener">3-hexo快捷键说明</a></li>
+<li><p>标识符必须以字母、下划线_、美元符号$开头。  </p>
+</li>
+<li><p>标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。</p>
+</li>
+<li><p>Java 标识符大小写敏感，且长度无限制。</p>
+</li>
+<li><p>标识符不可以是Java的关键字。</p>
+</li>
+<li><p>表示类名的表示符：每个单词的首字母大写，如Man,GoodMan</p>
+</li>
+<li><p>表示方法和变量的标识符：每个单词小写，从第二个单词开始首字母大写</p>
+</li>
 </ul>
+<h3 id="Java中的关键字、保留字"><a href="#Java中的关键字、保留字" class="headerlink" title="Java中的关键字、保留字"></a><strong>Java中的关键字、保留字</strong></h3><table>
+<thead>
+<tr>
+<th></th>
+<th>关键字</th>
+<th>保留字</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abstract</td>
+<td>assert</td>
+<td>boolean</td>
+<td>break</td>
+<td>byte</td>
+<td>case</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>char</td>
+<td>class</td>
+<td>const</td>
+<td>continue</td>
+<td>default</td>
+</tr>
+<tr>
+<td>do</td>
+<td>double</td>
+<td>else</td>
+<td>extends</td>
+<td>final</td>
+<td>finally</td>
+</tr>
+<tr>
+<td>float</td>
+<td>for</td>
+<td>goto</td>
+<td>if</td>
+<td>implements</td>
+<td>import</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>int</td>
+<td>interface</td>
+<td>long</td>
+<td>native</td>
+<td>new</td>
+</tr>
+<tr>
+<td>null</td>
+<td>package</td>
+<td>privvate</td>
+<td>protected</td>
+<td>public</td>
+<td>return</td>
+</tr>
+<tr>
+<td>short</td>
+<td>static</td>
+<td>strictfp</td>
+<td>super</td>
+<td>switch</td>
+<td>synchronized</td>
+</tr>
+<tr>
+<td>this</td>
+<td>throw</td>
+<td>throws</td>
+<td>transient</td>
+<td>try</td>
+<td>void</td>
+</tr>
+<tr>
+<td>voaltile</td>
+<td>while</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a><strong>变量的分类</strong></h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>声明位置</th>
+<th>从属于</th>
+<th>生命周期</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>局部变量</td>
+<td>方法或语句块内部</td>
+<td>方法/语句块</td>
+<td>从声明位置开始，直达方法或语句块执行完毕，局部变量消失</td>
+<td>变量名</td>
+</tr>
+<tr>
+<td>成员变量</td>
+<td>类内部，方法外部</td>
+<td>对象</td>
+<td>对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失</td>
+<td>对象.变量名</td>
+</tr>
+<tr>
+<td>静态变量</td>
+<td>类内部，static修饰</td>
+<td>类</td>
+<td>类被加载，静态变量就有效；类被卸载，静态变量消失</td>
+<td>class.变量名</td>
+</tr>
+</tbody></table>
+<h3 id="变量和常量的命名规范"><a href="#变量和常量的命名规范" class="headerlink" title="变量和常量的命名规范"></a><strong>变量和常量的命名规范</strong></h3><ul>
+<li>所有变量、方法、类名：见名知意</li>
+<li>类成员变量：首字母小写和驼峰原则：monthSalary</li>
+<li>局部变量： 首字母小写和驼峰原则</li>
+<li>常量：大写字母和下划线：MAX_VALUE </li>
+<li>类名：首字母大写和驼峰原则：Man,GoodMan</li>
+<li>方法名：首字母小写和驼峰原则：run(),runRun()</li>
+<li>常量的命名格式：final  type  varName = value;用finald定义,初始化后不能更改</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>所占空间</th>
+<th>表数范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>1字节</td>
+<td>-2^7 ~ 2^7-1 (-128 ~ 127)</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2字节</td>
+<td>-2^15 ~ 2^15-1 (-32768 ~ 32767)</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4字节</td>
+<td>-2^31~2^31-1 (约21亿）</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8字节</td>
+<td>-2^63~2^63-1</td>
+</tr>
+<tr>
+<td>flaot</td>
+<td>4字节</td>
+<td>-3.403E38~3.403E38</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8字节</td>
+<td>-1.798E308~1.798E308</td>
+</tr>
+<tr>
+<td>char</td>
+<td>2字节</td>
+<td></td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>占一位</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>算术运算符</td>
+<td>+，-，*，/，%，++，–</td>
+</tr>
+<tr>
+<td>赋值运算符</td>
+<td>=</td>
+</tr>
+<tr>
+<td>扩充运算符</td>
+<td>+=，-=，*=，/=</td>
+</tr>
+<tr>
+<td>关系运算符</td>
+<td>&gt;,&lt;,&gt;=,&lt;=,==,!=,instanceof</td>
+</tr>
+<tr>
+<td>逻辑运算符</td>
+<td>&amp;&amp;，丨丨，！，^</td>
+</tr>
+<tr>
+<td>位运算符</td>
+<td>&amp;&amp;，！，^,~,&gt;&gt;,&lt;&lt;,&gt;&gt;&gt;,丨丨</td>
+</tr>
+<tr>
+<td>条件运算符</td>
+<td>？，：</td>
+</tr>
+<tr>
+<td>字符串连接符</td>
+<td>+</td>
+</tr>
+</tbody></table>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>&#39;Java基础总结1&#39;</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="agui-coder">agui-coder</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-01-30, 14:34:00</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-30, 16:30:29</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/" title="&#39;Java基础总结1&#39;">https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Yelog</p>
