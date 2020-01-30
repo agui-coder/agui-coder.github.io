@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://agui-coder.github.io/"/>
-  <updated>2020-01-30T08:30:29.415Z</updated>
+  <updated>2020-01-30T10:06:56.712Z</updated>
   <id>https://agui-coder.github.io/</id>
   
   <author>
@@ -17,13 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>&#39;Java基础总结3&#39;</title>
+    <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/"/>
+    <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%933/</id>
+    <published>2020-01-30T09:51:02.000Z</published>
+    <updated>2020-01-30T10:06:56.712Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="面对对象知识进阶"><a href="#面对对象知识进阶" class="headerlink" title="面对对象知识进阶"></a><strong>面对对象知识进阶</strong></h3><ul><li>Java中只有单继承，接口可以多继承，继承之后子类拥有父类的全部属性和方法(除了构造器与被private修饰的属性和方法)</li><li>子类通过重写父类方法实现多态的必要条件</li><li>重写要方法名与形参列表相同，返回值类型和声明异常类型小于父类，访问权限子类要大于父类</li><li>可以通过重写toString方法改变打印输出或者字符串连接对象时的输出值</li><li>“==”双方式基本类型比值，是引用类型比地址</li><li>equals比较双方的内容，</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;面对对象知识进阶&quot;&gt;&lt;a href=&quot;#面对对象知识进阶&quot; class=&quot;headerlink&quot; title=&quot;面对对象知识进阶&quot;&gt;&lt;/a&gt;&lt;strong&gt;面对对象知识进阶&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Java中只有单继承，接口可以多继承，继承之后
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&#39;Java基础总结2&#39;</title>
+    <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%932/"/>
+    <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%932/</id>
+    <published>2020-01-30T08:36:45.000Z</published>
+    <updated>2020-01-30T09:50:02.279Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="面对对象基础知识"><a href="#面对对象基础知识" class="headerlink" title="面对对象基础知识"></a><strong>面对对象基础知识</strong></h3><ul><li>类的定义方式，每个源文件必须且只有一个public class,并且类名与文件名一致</li><li>类一般有三个成员：属性field、方法method、构造器constructor</li><li>构造器：用于对象的初始化，构造器名称必须与类名一致，通过new关键字调用构造器</li><li>方法：[修饰符1 修饰符2……] 返回值类型 方法名(形式参数列表){}</li><li>this的本质：指代当前方法所在类的对象，常用于二义性，也可以调用重载的构造方法但必须在方法第一位，this不能用于static方法中。</li><li>static:在static方法中不能访问<em>非static成员</em>,static修饰的成员和方法，从属于类一般用“类名.类属性、方法”普通变量和方法从属于对象。</li><li>静态化初始块当有父类就先执行父类的静态初始化块，构造方法也是一样。</li><li>参数传递机制:传的都是副本，原件不变。</li><li>包的命名:域名倒写</li><li>静态导入:import static java.lang.Math.*;/导入Math类的所有静态属性                  import static java.lang.Math.PI;//导入Math类的PI属性</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;面对对象基础知识&quot;&gt;&lt;a href=&quot;#面对对象基础知识&quot; class=&quot;headerlink&quot; title=&quot;面对对象基础知识&quot;&gt;&lt;/a&gt;&lt;strong&gt;面对对象基础知识&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;类的定义方式，每个源文件必须且只有一个publ
+      
+    
+    </summary>
+    
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>&#39;Java基础总结1&#39;</title>
     <link href="https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/"/>
     <id>https://agui-coder.github.io/2020/01/30/Java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</id>
     <published>2020-01-30T06:34:00.000Z</published>
-    <updated>2020-01-30T08:30:29.415Z</updated>
+    <updated>2020-01-30T09:49:58.100Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="标识符的使用规范"><a href="#标识符的使用规范" class="headerlink" title="标识符的使用规范"></a><strong>标识符的使用规范</strong></h3><p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p><ul><li><p>标识符必须以字母、下划线_、美元符号$开头。  </p></li><li><p>标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。</p></li><li><p>Java 标识符大小写敏感，且长度无限制。</p></li><li><p>标识符不可以是Java的关键字。</p></li><li><p>表示类名的表示符：每个单词的首字母大写，如Man,GoodMan</p></li><li><p>表示方法和变量的标识符：每个单词小写，从第二个单词开始首字母大写</p></li></ul><h3 id="Java中的关键字、保留字"><a href="#Java中的关键字、保留字" class="headerlink" title="Java中的关键字、保留字"></a><strong>Java中的关键字、保留字</strong></h3><table><thead><tr><th></th><th>关键字</th><th>保留字</th><th></th><th></th><th></th></tr></thead><tbody><tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td><td>case</td></tr><tr><td>catch</td><td>char</td><td>class</td><td>const</td><td>continue</td><td>default</td></tr><tr><td>do</td><td>double</td><td>else</td><td>extends</td><td>final</td><td>finally</td></tr><tr><td>float</td><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><tr><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><td>new</td></tr><tr><td>null</td><td>package</td><td>privvate</td><td>protected</td><td>public</td><td>return</td></tr><tr><td>short</td><td>static</td><td>strictfp</td><td>super</td><td>switch</td><td>synchronized</td></tr><tr><td>this</td><td>throw</td><td>throws</td><td>transient</td><td>try</td><td>void</td></tr><tr><td>voaltile</td><td>while</td><td></td><td></td><td></td><td></td></tr></tbody></table><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a><strong>变量的分类</strong></h3><table><thead><tr><th>类型</th><th>声明位置</th><th>从属于</th><th>生命周期</th><th>使用</th></tr></thead><tbody><tr><td>局部变量</td><td>方法或语句块内部</td><td>方法/语句块</td><td>从声明位置开始，直达方法或语句块执行完毕，局部变量消失</td><td>变量名</td></tr><tr><td>成员变量</td><td>类内部，方法外部</td><td>对象</td><td>对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失</td><td>对象.变量名</td></tr><tr><td>静态变量</td><td>类内部，static修饰</td><td>类</td><td>类被加载，静态变量就有效；类被卸载，静态变量消失</td><td>class.变量名</td></tr></tbody></table><h3 id="变量和常量的命名规范"><a href="#变量和常量的命名规范" class="headerlink" title="变量和常量的命名规范"></a><strong>变量和常量的命名规范</strong></h3><ul><li>所有变量、方法、类名：见名知意</li><li>类成员变量：首字母小写和驼峰原则：monthSalary</li><li>局部变量： 首字母小写和驼峰原则</li><li>常量：大写字母和下划线：MAX_VALUE </li><li>类名：首字母大写和驼峰原则：Man,GoodMan</li><li>方法名：首字母小写和驼峰原则：run(),runRun()</li><li>常量的命名格式：final  type  varName = value;用finald定义,初始化后不能更改</li></ul><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h3><table><thead><tr><th>类型</th><th>所占空间</th><th>表数范围</th></tr></thead><tbody><tr><td>byte</td><td>1字节</td><td>-2^7 ~ 2^7-1 (-128 ~ 127)</td></tr><tr><td>short</td><td>2字节</td><td>-2^15 ~ 2^15-1 (-32768 ~ 32767)</td></tr><tr><td>int</td><td>4字节</td><td>-2^31~2^31-1 (约21亿）</td></tr><tr><td>long</td><td>8字节</td><td>-2^63~2^63-1</td></tr><tr><td>flaot</td><td>4字节</td><td>-3.403E38~3.403E38</td></tr><tr><td>double</td><td>8字节</td><td>-1.798E308~1.798E308</td></tr><tr><td>char</td><td>2字节</td><td></td></tr><tr><td>boolean</td><td>占一位</td><td></td></tr></tbody></table><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h3><table><thead><tr><th>运算符</th><th></th></tr></thead><tbody><tr><td>算术运算符</td><td>+，-，*，/，%，++，–</td></tr><tr><td>赋值运算符</td><td>=</td></tr><tr><td>扩充运算符</td><td>+=，-=，*=，/=</td></tr><tr><td>关系运算符</td><td>&gt;,&lt;,&gt;=,&lt;=,==,!=,instanceof</td></tr><tr><td>逻辑运算符</td><td>&amp;&amp;，丨丨，！，^</td></tr><tr><td>位运算符</td><td>&amp;&amp;，！，^,~,&gt;&gt;,&lt;&lt;,&gt;&gt;&gt;,丨丨</td></tr><tr><td>条件运算符</td><td>？，：</td></tr><tr><td>字符串连接符</td><td>+</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h3 id="标识符的使用规范"><a href="#标识符的使用规范" class="headerlink" title="标识符的使用规范"></a><strong>标识符的使用规范</strong></h3><p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p><ul><li><p>标识符必须以字母、下划线_、美元符号$开头。  </p></li><li><p>标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。</p></li><li><p>Java 标识符大小写敏感，且长度无限制。</p></li><li><p>标识符不可以是Java的关键字。</p></li><li><p>表示类名的表示符：每个单词的首字母大写，如Man,GoodMan</p></li><li><p>表示方法和变量的标识符：每个单词小写，从第二个单词开始首字母大写</p></li></ul><h3 id="Java中的关键字、保留字"><a href="#Java中的关键字、保留字" class="headerlink" title="Java中的关键字、保留字"></a><strong>Java中的关键字、保留字</strong></h3><table><thead><tr><th></th><th>关键字</th><th>保留字</th><th></th><th></th><th></th></tr></thead><tbody><tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td><td>case</td></tr><tr><td>catch</td><td>char</td><td>class</td><td>const</td><td>continue</td><td>default</td></tr><tr><td>do</td><td>double</td><td>else</td><td>extends</td><td>final</td><td>finally</td></tr><tr><td>float</td><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><tr><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><td>new</td></tr><tr><td>null</td><td>package</td><td>privvate</td><td>protected</td><td>public</td><td>return</td></tr><tr><td>short</td><td>static</td><td>strictfp</td><td>super</td><td>switch</td><td>synchronized</td></tr><tr><td>this</td><td>throw</td><td>throws</td><td>transient</td><td>try</td><td>void</td></tr><tr><td>voaltile</td><td>while</td><td></td><td></td><td></td><td></td></tr></tbody></table><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a><strong>变量的分类</strong></h3><table><thead><tr><th>类型</th><th>声明位置</th><th>从属于</th><th>生命周期</th><th>使用</th></tr></thead><tbody><tr><td>局部变量</td><td>方法或语句块内部</td><td>方法/语句块</td><td>从声明位置开始，直达方法或语句块执行完毕，局部变量消失</td><td>变量名</td></tr><tr><td>成员变量</td><td>类内部，方法外部</td><td>对象</td><td>对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失</td><td>对象.变量名</td></tr><tr><td>静态变量</td><td>类内部，static修饰</td><td>类</td><td>类被加载，静态变量就有效；类被卸载，静态变量消失</td><td>class.变量名</td></tr></tbody></table><h3 id="变量和常量的命名规范"><a href="#变量和常量的命名规范" class="headerlink" title="变量和常量的命名规范"></a><strong>变量和常量的命名规范</strong></h3><ul><li>所有变量、方法、类名：见名知意</li><li>类成员变量：首字母小写和驼峰原则：monthSalary</li><li>局部变量： 首字母小写和驼峰原则</li><li>常量：大写字母和下划线：MAX_VALUE </li><li>类名：首字母大写和驼峰原则：Man,GoodMan</li><li>方法名：首字母小写和驼峰原则：run(),runRun()</li><li>常量的命名格式：final  type  varName = value;用finald定义,初始化后不能更改</li></ul><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h3><table><thead><tr><th>类型</th><th>所占空间</th><th>表数范围</th></tr></thead><tbody><tr><td>byte</td><td>1字节</td><td>-2^7 ~ 2^7-1 (-128 ~ 127)</td></tr><tr><td>short</td><td>2字节</td><td>-2^15 ~ 2^15-1 (-32768 ~ 32767)</td></tr><tr><td>int</td><td>4字节</td><td>-2^31~2^31-1 (约21亿）</td></tr><tr><td>long</td><td>8字节</td><td>-2^63~2^63-1</td></tr><tr><td>flaot</td><td>4字节</td><td>-3.403E38~3.403E38</td></tr><tr><td>double</td><td>8字节</td><td>-1.798E308~1.798E308</td></tr><tr><td>char</td><td>2字节</td><td></td></tr><tr><td>boolean</td><td>占一位</td><td></td></tr></tbody></table><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h3><table><thead><tr><th>运算符</th><th></th></tr></thead><tbody><tr><td>算术运算符</td><td>+，-，*，/，%，++，–</td></tr><tr><td>赋值运算符</td><td>=</td></tr><tr><td>扩充运算符</td><td>+=，-=，*=，/=</td></tr><tr><td>关系运算符</td><td>&gt;,&lt;,&gt;=,&lt;=,==,!=,instanceof</td></tr><tr><td>逻辑运算符</td><td>&amp;&amp;，丨丨，！，^</td></tr><tr><td>位运算符</td><td>&amp;&amp;，！，^,~,&gt;&gt;,&lt;&lt;,&gt;&gt;&gt;,丨丨</td></tr><tr><td>条件运算符</td><td>？，：</td></tr><tr><td>字符串连接符</td><td>+</td></tr></tbody></table><h3 id="控制语句"><a href="#控制语句" class="headerlink" title="控制语句"></a><strong>控制语句</strong></h3><p>1、if单选择结构：if(boolean){}true执行，false不执行。</p><p>2、if-else双选择结构：if(){true}elese{false}.</p><p>3、if-else多选择结构：if(){}else if(){}else if(){}……</p><p>4、switch(){case 值1：语句1;[break];case 值2：语句2；[break];……[default:默认语句；]}</p><p>5、while循环结构：while(){循环体}。</p><p>6、do{循环体}while().</p><p>7、for循环（初始表达式；布尔表达式；迭代因子）{}；</p><p>8、增强for循环(数据类型 循环赋值输出的变量(相当于for循环的i) : 定义的容器名){}</p><p>9、break强制破坏循环，不在执行循环，continue跳过循环体中尚未执行的语句，接着进行下一次是否执行循环的判定</p>]]></content>
     
     <summary type="html">
     
@@ -43,6 +91,12 @@
       <category term="关键字" scheme="https://agui-coder.github.io/tags/%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     
       <category term="变量" scheme="https://agui-coder.github.io/tags/%E5%8F%98%E9%87%8F/"/>
+    
+      <category term="数据类型" scheme="https://agui-coder.github.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+      <category term="运算符" scheme="https://agui-coder.github.io/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    
+      <category term="控制语句" scheme="https://agui-coder.github.io/tags/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/"/>
     
   </entry>
   
