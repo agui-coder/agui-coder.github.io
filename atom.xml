@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://agui-coder.github.io/"/>
-  <updated>2020-01-30T18:54:13.205Z</updated>
+  <updated>2020-02-01T02:35:44.632Z</updated>
   <id>https://agui-coder.github.io/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>容器</title>
+    <link href="https://agui-coder.github.io/2020/02/01/%E5%AE%B9%E5%99%A8/"/>
+    <id>https://agui-coder.github.io/2020/02/01/%E5%AE%B9%E5%99%A8/</id>
+    <published>2020-02-01T02:06:17.000Z</published>
+    <updated>2020-02-01T02:35:44.632Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Coll接口"><a href="#Coll接口" class="headerlink" title="Coll接口"></a><strong>Coll接口</strong></h3><img src="source\img\rongqi.jpg">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Coll接口&quot;&gt;&lt;a href=&quot;#Coll接口&quot; class=&quot;headerlink&quot; title=&quot;Coll接口&quot;&gt;&lt;/a&gt;&lt;strong&gt;Coll接口&lt;/strong&gt;&lt;/h3&gt;&lt;img src=&quot;source\img\rongqi.jpg&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    
+    
+      <category term="容器" scheme="https://agui-coder.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>包装类</title>
+    <link href="https://agui-coder.github.io/2020/01/31/%E5%8C%85%E8%A3%85%E7%B1%BB/"/>
+    <id>https://agui-coder.github.io/2020/01/31/%E5%8C%85%E8%A3%85%E7%B1%BB/</id>
+    <published>2020-01-31T04:50:37.000Z</published>
+    <updated>2020-01-31T05:09:30.858Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a><strong>包装类</strong></h3><ul><li><p>包装类只用记住两个Integer与Character其余的只需要早原来的基本类型上首字母大写</p></li><li><p>通过包装类Integer.toString()将整型转换为字符串；</p></li><li><p>通过Integer.parseInt()将字符串转换为int类型；</p></li><li><p>通过valueOf()方法把字符串转换为包装类然后通过自动拆箱</p></li><li><p>就是把基本类型当对象处理</p></li></ul><h3 id="包装类的应用场景"><a href="#包装类的应用场景" class="headerlink" title="包装类的应用场景"></a><strong>包装类的应用场景</strong></h3><p>1、集合类泛型只能是包装类</p><ul><li>// 编译报错<br>List<int> list1 = new ArrayList&lt;&gt;();<br>//正常<br>List<Integer> list2 = new ArrayList&lt;&gt;();</li></ul><p>2、成员变量不能有默认值 </p><ul><li>private int status；<br>基本数据类型的成员变量都有默认值，如以上代码 status 默认值为 0，如果定义中 0 代表失败，那样就会有问题，这样只能使用包装类 Integer，它的默认值为 null,所以就不会有默认值影响。</li></ul><p>3、方法参数允许定义空值</p><ul><li>private static void test1(int status){<br>  System.out.println(status);<br>}<br>看以上代码，方法参数定义的是基本数据类型 int，所以必须得传一个数字过来，不能传 null，很多场合我们希望是能传递 null 的，所以这种场合用包装类比较合适。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;包装类&quot;&gt;&lt;a href=&quot;#包装类&quot; class=&quot;headerlink&quot; title=&quot;包装类&quot;&gt;&lt;/a&gt;&lt;strong&gt;包装类&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;包装类只用记住两个Integer与Character其余的只需要早原来的基本类型
+      
+    
+    </summary>
+    
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    
+    
+      <category term="包装类" scheme="https://agui-coder.github.io/tags/%E5%8C%85%E8%A3%85%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异常处理</title>
+    <link href="https://agui-coder.github.io/2020/01/31/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>https://agui-coder.github.io/2020/01/31/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</id>
+    <published>2020-01-30T19:06:47.000Z</published>
+    <updated>2020-01-30T19:26:49.055Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a><strong>捕获异常</strong></h3><ul><li>try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。<pre><code>一个try语句必须带有至少一个catch语句块或一个finally语句块 。当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。</code></pre></li><li>catch<br>   1、每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。<br>   2、常用方法，这些方法均继承自Throwable类<br>   3、toString ()方法，显示异常的类名和产生异常的原因<br>   4、getMessage()方法，只显示产生异常的原因，但不显示类名。<br>   5、printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。<br>   6、如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。</li><li>finally<br>   有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中<br>   通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等</li><li>注意事项<br>   1、即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。<br>   2、finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。 </li></ul><h3 id="抛出异常-throws"><a href="#抛出异常-throws" class="headerlink" title="抛出异常(throws)"></a><strong>抛出异常(throws)</strong></h3><ul><li>1、在方法中使用try-catch-finally是由这个方法来处理异常。但是在一些情况下，当前方法并不需要处理发生的异常，而是向上传递给调用它的方法处理。<br>2、如果一个方法抛出多个已检查异常，就必须在方法的首部列出所有的异常，之间以逗号隔开。<br>3、如果一个方法中可能产生某种异常，但是并不能确定如何处理这种异常，则应根据异常规范在方法的首部声明该方法可能抛出的异常。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;捕获异常&quot;&gt;&lt;a href=&quot;#捕获异常&quot; class=&quot;headerlink&quot; title=&quot;捕获异常&quot;&gt;&lt;/a&gt;&lt;strong&gt;捕获异常&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任
+      
+    
+    </summary>
+    
+    
+      <category term="学习历程" scheme="https://agui-coder.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    
+    
+      <category term="异常" scheme="https://agui-coder.github.io/tags/%E5%BC%82%E5%B8%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>常见运行时异常</title>

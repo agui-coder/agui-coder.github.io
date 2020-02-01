@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | 可几和</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | 可几和">
+  <title>包装类 | 可几和</title>
+  <meta name="keywords" content=" 包装类 ">
+  <meta name="description" content="包装类 | 可几和">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Coll接口">
 <meta property="og:type" content="article">
@@ -459,19 +459,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-包装类" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">包装类</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="学习历程">学习历程</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">包装类</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-30 04:33:51'>2020-01-30 04:33</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-31 13:09:30'>2020-01-31 12:50</time>
         
     </div>
     <div class="article-meta">
@@ -493,7 +505,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#包装类"><span class="toc-text">包装类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#包装类的应用场景"><span class="toc-text">包装类的应用场景</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -509,19 +521,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a><strong>包装类</strong></h3><ul>
+<li><p>包装类只用记住两个Integer与Character其余的只需要早原来的基本类型上首字母大写</p>
+</li>
+<li><p>通过包装类Integer.toString()将整型转换为字符串；</p>
+</li>
+<li><p>通过Integer.parseInt()将字符串转换为int类型；</p>
+</li>
+<li><p>通过valueOf()方法把字符串转换为包装类然后通过自动拆箱</p>
+</li>
+<li><p>就是把基本类型当对象处理</p>
+</li>
+</ul>
+<h3 id="包装类的应用场景"><a href="#包装类的应用场景" class="headerlink" title="包装类的应用场景"></a><strong>包装类的应用场景</strong></h3><p>1、集合类泛型只能是包装类</p>
+<ul>
+<li>// 编译报错<br>List<int> list1 = new ArrayList&lt;&gt;();<br>//正常<br>List<Integer> list2 = new ArrayList&lt;&gt;();</li>
+</ul>
+<p>2、成员变量不能有默认值 </p>
+<ul>
+<li>private int status；<br>基本数据类型的成员变量都有默认值，如以上代码 status 默认值为 0，如果定义中 0 代表失败，那样就会有问题，这样只能使用包装类 Integer，它的默认值为 null,所以就不会有默认值影响。</li>
+</ul>
+<p>3、方法参数允许定义空值</p>
+<ul>
+<li>private static void test1(int status){<br>  System.out.println(status);<br>}<br>看以上代码，方法参数定义的是基本数据类型 int，所以必须得传一个数字过来，不能传 null，很多场合我们希望是能传递 null 的，所以这种场合用包装类比较合适。</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -535,12 +558,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>包装类</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="agui-coder">agui-coder</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-30, 04:33:51</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-30, 04:33:51</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/30/hello-world/" title="Hello World">https://agui-coder.github.io/2020/01/30/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2020-01-31, 12:50:37</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-31, 13:09:30</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/31/%E5%8C%85%E8%A3%85%E7%B1%BB/" title="包装类">https://agui-coder.github.io/2020/01/31/%E5%8C%85%E8%A3%85%E7%B1%BB/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
